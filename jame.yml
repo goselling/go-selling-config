@@ -31,7 +31,7 @@ keycloak:
     username: 'admin'
     password: 'admin'
     client-id: 'go-selling'
-    secret: 'mp3npE4H0LeAUn5LJWeFl7oQ55R6ypL0'
+    secret: 'UljGEyK278ikO7Ss3ULLKLkMgb0E7atn'
     provider: secret
 logging:
   level:
