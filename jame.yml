@@ -1,0 +1,38 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:1234/auth/realms/go-selling-api
+          jwk-set-uri: http://localhost:1234/auth/realms/go-selling-api/protocol/openid-connect/certs
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gosellingproject@gmail.com
+    password: mmlrtnqtokjctfgx
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable : true
+            required : true
+          from: contact@email.com
+      from:
+        name: Sak
+
+keycloak:
+  realm: go-selling-api
+  resource: go-selling
+  auth-server-url: http://localhost:1234/auth
+  credentials:
+    username: 'admin'
+    password: 'admin'
+    client-id: 'go-selling'
+    secret: 'mp3npE4H0LeAUn5LJWeFl7oQ55R6ypL0'
+    provider: secret
+logging:
+  level:
+    org.springframework.web: debug
