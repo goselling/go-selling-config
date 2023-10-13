@@ -8,6 +8,12 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:1234/auth/realms/go-selling-api
+          jwk-set-uri: http://localhost:1234/auth/realms/go-selling-api/protocol/openid-connect/certs
 keycloak:
   realm: go-selling-api
   resource: go-selling
