@@ -27,7 +27,9 @@ keycloak:
     password: 'admin'
     client-id: 'go-selling'
     secret: 'mp3npE4H0LeAUn5LJWeFl7oQ55R6ypL0'
-    provider: secret    
+    provider: secret
+file:
+  uploadPath: buyer-service/src/main/resources/storage/
     
 
 
