@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:2000/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:1234/auth/realms/go-selling-api
+          jwk-set-uri: http://localhost:1234/auth/realms/go-selling-api/protocol/openid-connect/certs
+keycloak:
+  realm: go-selling-api
+  resource: go-selling
+  auth-server-url: http://localhost:1234/auth
+  credentials:
+    username: 'admin'
+    password: 'admin'
+    client-id: 'go-selling'
+    secret: 'E8RhkerfPxzll3kuJbecjfKiqW3AOk4K'
+    provider: secret
+file:
+  uploadPath: post-service/src/main/resources/storage/
