@@ -2,10 +2,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:2005/postgres
-    initialization-mode: always
     username: postgres
     password: postgres
-    data: classpath:/category-service/src/main/resources/script.sql
   jpa:
     hibernate:
       ddl-auto: create-drop
