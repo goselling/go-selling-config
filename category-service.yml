@@ -5,7 +5,7 @@ spring:
     initialization-mode: always
     username: postgres
     password: postgres
-    data: classpath:/script.sql
+    data: classpath:/category-service/src/main/resources/script.sql
   jpa:
     hibernate:
       ddl-auto: create-drop
