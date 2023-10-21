@@ -34,3 +34,14 @@ keycloak:
     provider: secret
 file:
   uploadPath: user-info-service/src/main/resources/storage/
+openapi:
+  service:
+    title: user-info-service
+    version: 1.0.0
+    url: http://localhost:1688
+
+springdoc:
+  api-docs:
+    path: /user-info-service/v3/api-docs
+  swagger-ui:
+    path: /user-info-service/swagger-ui.html  
