@@ -34,6 +34,16 @@ keycloak:
     provider: secret
 file:
   uploadPath: post-service/src/main/resources/storage/
-    
+openapi:
+  service:
+    title: post-service
+    version: 1.0.0
+    url: http://localhost:1688
+
+springdoc:
+  api-docs:
+    path: /post-service/v3/api-docs
+  swagger-ui:
+    path: /post-service/swagger-ui.html    
 
 
