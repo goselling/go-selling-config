@@ -22,7 +22,10 @@ spring:
           from: contact@email.com
       from:
         name: Sak
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka 
 keycloak:
   realm: go-selling-api
   resource: go-selling
