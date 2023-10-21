@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+openapi:
+  service:
+    title: common-service
+    version: 1.0.0
+    url: http://localhost:1688
+
+springdoc:
+  api-docs:
+    path: /common-service/v3/api-docs
+  swagger-ui:
+    path: /common-service/swagger-ui.html
