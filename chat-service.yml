@@ -11,4 +11,15 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka     
+      defaultZone: http://localhost:8761/eureka
+openapi:
+  service:
+    title: chat-service
+    version: 1.0.0
+    url: http://localhost:1688
+
+springdoc:
+  api-docs:
+    path: /chat-service/v3/api-docs
+  swagger-ui:
+    path: /chat-service/swagger-ui.html
