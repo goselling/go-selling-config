@@ -37,6 +37,4 @@ springdoc:
       - url: /shop-service/v3/api-docs
         name: Shop Service
       - url: /user-info-service/v3/api-docs
-        name: User Info Service       
-      - url: /common-service/v3/api-docs
-        name: Common Service 
+        name: User Info Service
