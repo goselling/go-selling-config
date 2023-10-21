@@ -34,3 +34,14 @@ keycloak:
     provider: secret
 file:
   uploadPath: product-service/src/main/resources/storage/
+openapi:
+  service:
+    title: product-service
+    version: 1.0.0
+    url: http://localhost:1688
+
+springdoc:
+  api-docs:
+    path: /product-service/v3/api-docs
+  swagger-ui:
+    path: /product-service/swagger-ui.html
