@@ -34,3 +34,14 @@ keycloak:
     provider: secret
 file:
   uploadPath: shop-service/src/main/resources/storage/
+openapi:
+  service:
+    title: seller-service
+    version: 1.0.0
+    url: http://localhost:1688
+
+springdoc:
+  api-docs:
+    path: /seller-service/v3/api-docs
+  swagger-ui:
+    path: /seller-service/swagger-ui.html  
