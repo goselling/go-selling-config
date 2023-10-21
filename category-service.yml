@@ -27,4 +27,15 @@ keycloak:
     password: 'admin'
     client-id: 'go-selling'
     secret: 'mp3npE4H0LeAUn5LJWeFl7oQ55R6ypL0'
-    provider: secret  
+    provider: secret
+openapi:
+  service:
+    title: category-service
+    version: 1.0.0
+    url: http://localhost:1688
+
+springdoc:
+  api-docs:
+    path: /category-service/v3/api-docs
+  swagger-ui:
+    path: /category-service/swagger-ui.html
