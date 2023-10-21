@@ -19,4 +19,10 @@ spring:
         - id: user-service
           uri: lb://USER-SERVICE
           predicates: 
-            - Path=/api/v1/**   
+            - Path=/api/v1/**
+        - id: openapi
+          uri: http://localhost:${server.port}
+          predicates: 
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
