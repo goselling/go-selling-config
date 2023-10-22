@@ -30,8 +30,6 @@ springdoc:
         name: Chat Service
       - url: /post-service/v3/api-docs
         name: Post Service
-      - url: /product-for-sale-service/v3/api-docs
-        name: Product for Sale Service
       - url: /product-service/v3/api-docs
         name: Product Service
       - url: /shop-service/v3/api-docs
