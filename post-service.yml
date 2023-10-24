@@ -6,7 +6,7 @@ spring:
   #   password: postgres
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/chat_db
+    url: jdbc:postgresql://localhost:5432/post_db
     username: postgres
     password: tradewise321
   jpa:
